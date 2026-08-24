@@ -198,7 +198,7 @@ fig = px.pie(
 st.plotly_chart(fig, use_container_width=True)
 
 # O gráfico de pizza deixa bem claro que o Sudeste ficou com a maior fatia de casos do país (uns 38%), seguido pelo Nordeste (~24%) e Sul (~19%). O Centro-Oeste (~10%) e o Norte (~9%) ficaram com as menores fatias, mostrando que o total de doentes acompanhou o tamanho da população de cada lugar.
-
+# ola
 st.header('Exercício 11')
 
 df_estados = df[(df['estado'].notna()) & (df['municipio'].isna()) & (df['codmun'].isna())]
