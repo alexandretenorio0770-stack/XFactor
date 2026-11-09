@@ -38,7 +38,7 @@ Para rodar cada aplicação, navegue até a pasta correspondente ou execute o `u
 
 #### Questão 1: Gerador de Texto com GPT-2
 ```bash
-uvicorn ex1_api:app --reload
+uvicorn parte1.ex1_api.main:app --reload
 ```
 - **Endpoint:** `POST http://127.0.0.1:8000/translate`
 - **Exemplo de Body JSON:**
@@ -54,7 +54,7 @@ uvicorn ex1_api:app --reload
 
 #### Questão 1: Chatbot com Fake LLM
 ```bash
-uvicorn ex1_lang:app --reload
+uvicorn parte2.ex1_lang.main:app --reload
 ```
 - **Endpoint:** `POST http://127.0.0.1:8000/chat`
 - **Exemplo de Body JSON:**
@@ -72,7 +72,7 @@ uvicorn ex1_lang:app --reload
 $env:OPENAI_API_KEY="sk-sua-chave-aqui"
 
 # Executar a aplicação
-uvicorn ex2_lang:app --reload
+uvicorn parte2.ex2_lang.main:app --reload
 ```
 - **Endpoint:** `POST http://127.0.0.1:8000/translate`
 - **Exemplo de Body JSON:**
@@ -84,7 +84,7 @@ uvicorn ex2_lang:app --reload
 
 #### Questão 3: Tradutor EN -> DE com HuggingFace & LangChain
 ```bash
-uvicorn ex3_lang:app --reload
+uvicorn parte2.ex3_lang.main:app --reload
 ```
 - **Endpoint:** `POST http://127.0.0.1:8000/translate`
 - **Exemplo de Body JSON:**
